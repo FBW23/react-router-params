@@ -22,13 +22,16 @@ class PostDetail extends Component {
 
     render() { 
 
-        let text = this.state.body;
-        console.log(text)
-
-        return ( 
-        <div className="body" key={this.state.id}>
-            <p>{this.state.body}</p>
+        let text = this.state.post;
+        let jsxText = text.map(post => (
+            <div key={this.state.id}>
+            <p>{post.body}</p>
             <button><Link to="/">うしろ</Link></button>
+            </div>
+        ))
+        return ( 
+        <div className="body">
+            {jsxText}
         </div> );
     }
 }
