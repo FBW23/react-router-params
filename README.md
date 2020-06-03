@@ -1,49 +1,68 @@
-# Exercise - Dynamic Routes
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- Clone this repo
-- Create a fresh React app using CRA
-- Create a views folder in src/ folder
-  - create two page components in there: PostList.js and PostDetail.js
+## Available Scripts
 
-## PostList page
+In the project directory, you can run:
 
-  - Setup your state with an empty posts array
-  - Display a list of posts
-    - use the typicode posts API: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
-    - load the data in componentDidMount and store it in state
+### `npm start`
 
-  - Render all posts with just the title (not description)
-    - add a router link to get to a single post
-    - the link should point to the PostDetail page component
-    - attach the ID of the post to your link
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## PostDetail page
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-  - Receive the post ID from params
-  - Fetch the single post from API here in componentDidMount
-    - do so by appending the post ID to the URL
-    - store the received single post in state
-  - Render method: show here all post details including the description field
-  - Add a router link to get back to the Post list
+### `npm test`
 
-That's it! 
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Congrats! Routing from list to detail view mastered
+### `npm run build`
 
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Bonus (optional - just for extra challenge)
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-- Research on Google how you can pass data (=state) when clicking on a router link component `<Link to="some-path">`. And how you can receive it in the target page
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- Refactor your project
-  - Commit your current work
-  - Adapt PostList.js
-    - send along the post item when clicking on the detail view link
-  - Adapt PostDetail.js
-    - refactor your class component to a functional component
-    - delete or comment out your componentDidMount method with the API call
-    - look for the received post object in props
-      - console.log the received props and search for it there
-    - display the received post object in your render() method
+### `npm run eject`
 
-Well done
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
