@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background-color: darkmagenta;
+  height: 100%;
+  .listPosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .post {
+      border: 4px dashed rgb(2, 202, 2);
+      width: 200px;
+      height: 160px;
+      margin-top: 20px;
+      background-color: coral;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      button {
+        border: 2px solid blue;
+        background-color: yellow;
+        border-radius: 20px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+
